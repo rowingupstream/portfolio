@@ -1,3 +1,194 @@
 * {
-    background-color: green;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* { box-sizing: border-box;}
+
+body {
+  font-family: Roboto, sans-serf;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 0 5vw;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+footer li {
+  padding: 0 20px 0px 0px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+ul {
+  display: flex;
+  font-weight: 300;
+}
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1.5rem;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.worklink a {
+  margin: 0 0 0 0;
+}
+
+.worklink a:hover {
+  border-bottom: none;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.intro {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin: 100px 10px 50px 10px;
+  text-align: center;
+}
+
+section {
+  display: grid;
+  grid-gap: 20px 70px;
+  grid-template-columns: 1fr;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* new code */
+
+.header ul {
+    overflow: hidden;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: all .5s ease-out;
+}
+
+/* target area for menu */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-top: -3.3rem;
+    padding: 1.5rem 0;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* size of bars */
+
+.header .menu-icon .navicon {
+    background: #777;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 2.3rem;
+}
+
+/* construction of the bars */
+
+.header .menu-icon .navicon:after,.header .menu-icon .navicon:before {
+    background: #777;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* hides checkbox trigger */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 100vh;
+    padding: 200px 0;
+}
+
+/* hides middle bar */  
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+/* impacts transition from bars to X */
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after,.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before {
+    top: 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .intro {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 100px 10px;
+  }
 }
