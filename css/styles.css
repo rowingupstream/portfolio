@@ -78,7 +78,7 @@ h3 {
   text-align: center;
 }
 
-section {
+.twocol-grid {
   display: grid;
   grid-gap: 20px 70px;
   grid-template-columns: 1fr;
@@ -185,9 +185,18 @@ img {
     top: 0;
 }
 
+.casestudy-hero {
+  background: blue;
+  padding: 100px 0;
+}
+
+.casestudy-hero img {
+  background: blue;
+  width: 100%;
+}
 
 @media (min-width: 768px) {
-  section {
+  .twocol-grid {
     grid-template-columns: 1fr 1fr;
   }
   
