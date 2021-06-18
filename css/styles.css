@@ -210,7 +210,7 @@ img {
 
 .test {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 5rem;
   margin: 1rem 0 2rem 0;
   width: 100%;
@@ -231,18 +231,15 @@ img {
 
 .overview-intro {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .overview-intro p {
-  width: 65%;
+  width: 100%;
   font-size: 3rem;
   line-height: 1.6;
 }
 
 .overview-intro ul {
-  width: 40%;
   list-style-type: none;
 }
 
@@ -256,26 +253,26 @@ img {
 
 .bottom {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10rem;
-  margin: 1rem 0 2rem 0;
+  grid-template-columns: 1fr;
+  margin: 1rem 0 1rem 0;
   width: 100%;
 }
 
 .bottom-container h3 {
   font-size: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .learnings h4{
   font-size: 3rem;
   line-height: 3rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .learnings p{
   font-size: 2rem;
   line-height: 3rem;
 }
+
 
 
 @media (min-width: 768px) {
@@ -288,4 +285,40 @@ img {
     line-height: 5rem;
     margin: 100px 10px;
   }
+
+@media (min-width: 768px) {
+  .test {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5rem;
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+  }
+  
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10rem;
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+  }
+
+  .overview-intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .overview-intro p {
+    width: 80%;
+    font-size: 3rem;
+    line-height: 1.6;
+  }
+  
+  .overview-intro ul {
+    width: 40%;
+    list-style-type: none;
+  }
+
+  
 }
