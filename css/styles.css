@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&display=swap');
 
 * { box-sizing: border-box; }
 
@@ -7,17 +7,18 @@
 }
 
 body {
-  font-family: Roboto, sans-serf;
-  background-color: black;
-  color: white;
+  font-family: 'Manrope', sans-serf;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .container {
-  padding: 0 5vw;
+  display: grid;
+  padding: 0 10vw;
 }
 
 nav {
-  background-color: black;
+  background-color: #ffffff;
   width: 100%;
   position: fixed;
   margin-top: -100px;
@@ -50,28 +51,42 @@ footer li {
 
 a:link {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   margin-left: 1.5rem;
 }
 
 a:visited {
-  color: #fff;
+  color: #000000;
 }
 
-.worklink a {
-  margin: 0 0 0 0;
+.worklink, .one, .two, .three, .four, .five, .six {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.big-card a, .card a {
+  margin: 0px;
 }
 
 .worklink a:hover {
   border-bottom: none;
 }
 
+.work-text {
+  padding: 20px;
+}
+
 h3 {
-  font-size: 4rem;
-  font-weight: 400;
-  padding: 2rem 0 4rem 0;
-  float: left;
-  /* margin-bottom: 3rem; */
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.card h3 {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 h4 {
@@ -80,17 +95,16 @@ h4 {
 }
 
 .intro {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 700;
   line-height: 3rem;
   padding-top: 50px;
   margin: 100px 10px 50px 10px;
-  text-align: center;
 }
 
-.twocol-grid {
+.twocol-grid, .threecol-grid  {
   display: grid;
-  grid-gap: 20px 70px;
+  grid-gap: 24px 24px;
   grid-template-columns: 1fr;
 }
 
@@ -113,8 +127,16 @@ p {
   margin-bottom: 4.5rem;
 }
 
+h5 {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  color: #000000
+}
+
 img {
-  margin-bottom: 40px;
   width: 100%;
 }
 
@@ -283,11 +305,64 @@ img {
   .twocol-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .threecol-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 24px;
+  }
+
+  .homepage-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+      "one one four"
+      "one one five"
+      "two three six";
+
+  }
+
+  .one {
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one img {
+    /* max-height: 200px; */
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .four {
+    grid-area: four;
+  }
   
+  .five {
+    grid-area: five;
+  }
+
+  .card-image {
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  .card 
+
   .intro {
     font-size: 4rem;
+    font-weight: 600;
     line-height: 5rem;
-    margin: 100px 10px;
+    margin: 100px auto 72px auto;
+    width: 60%;
+    text-align: center;
   }
 
   .test {
