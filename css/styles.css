@@ -94,13 +94,6 @@ h4 {
   font-weight: 400;
 }
 
-.intro {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 3rem;
-  padding-top: 50px;
-  margin: 100px 10px 50px 10px;
-}
 
 .twocol-grid, .threecol-grid  {
   display: grid;
@@ -300,17 +293,24 @@ img {
 }
 
 
+@media (max-width: 767px) {
+  .homepage-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+      "one"
+      "four"
+      "five"
+      "two"
+      "three"
+      "six";
+  }
+}
+
 
 @media (min-width: 768px) {
-  .twocol-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .threecol-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 24px;
-  }
-
   .homepage-grid {
     display: grid;
     grid-gap: 20px;
@@ -320,8 +320,8 @@ img {
       "one one four"
       "one one five"
       "two three six";
-
   }
+}
 
   .one {
     grid-area: one;
@@ -350,11 +350,18 @@ img {
   }
 
   .card-image {
-    max-height: 200px;
+    max-height: 440px;
     overflow: hidden;
   }
 
-  .card 
+  .hero-image {
+    overflow: hidden;
+    transition: transform  ease-in-out 900ms;
+  }
+  
+  .hero-image:hover {
+    transform: scale(1.5,1.5);
+  }
 
   .intro {
     font-size: 4rem;
@@ -364,6 +371,17 @@ img {
     width: 60%;
     text-align: center;
   }
+  
+  @media (max-width: 767px) {
+    .intro {
+      font-size: 2.75rem;
+      line-height: 4rem;
+      font-weight: 700;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  } 
+  
 
   .test {
     display: grid;
