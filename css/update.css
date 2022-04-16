@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+:root { 
+  font-size: 50%;
+}
+
+body {
+  font-family: 'Manrope', sans-serf;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  display: grid;
+  padding: 0 10vw;
+}
+
+nav {
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  margin-top: -100px;
+}
+
+footer {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+footer li {
+  padding: 0 20px 0px 0px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.menu {
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 1.5rem;
+}
+
+a:visited {
+  color: #000000;
+}
+
+img {
+  width: 100%;
+}
+
+/* new code */
+
+.header ul {
+    overflow: hidden;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: all .5s ease-out;
+}
+
+/* target area for menu */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* size of bars */
+
+.header .menu-icon .navicon {
+    background: #777;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 2.3rem;
+}
+
+/* construction of the bars */
+
+.header .menu-icon .navicon:after,.header .menu-icon .navicon:before {
+    background: #777;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* hides checkbox trigger */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 100vh;
+    padding: 200px 0;
+    font-size: 3rem;
+}
+
+/* hides middle bar */  
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+/* impacts transition from bars to X */
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after,.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before {
+    top: 0;
+}
+
+
+/* CASE STUDY PAGE */
+
+/* Overview Section */
+
+.overview {
+    padding: 100px 0 24px 0;
+  }
+
+.overview-intro {
+  width: 100%;
+}
+
+.background {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 9rem;
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+  }
+
+.background-left {
+    max-width: 725px;
+  }
+
+p {
+    font-size: 2rem;
+    line-height: 3.25rem;
+    font-weight: 400;
+    margin-bottom: 80px;
+  }
+
+.overview h2 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+  }
+
+.overview h3 {
+    font-size: 3.25rem;
+    line-height: 1.25;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+
+/* OBSERVATIONS SECTION */
+
+.observations {
+  padding: 3rem 0;
+}
+
+.section-image {
+    margin-bottom: 3rem;
+    border-radius: 16px;
+}
+  
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10rem;
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+  }
+
+.results-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    margin: 1rem 0 1rem 0;
+    width: 70%;
+  }
+
+.results-three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10rem;
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+  }
+  
+  .observations h3 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 500;
+  }
+
+  .learnings h4{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .learnings p {
+    font-size: 2rem;
+    line-height: 3.25rem;
+  }
+  
+  
+}
