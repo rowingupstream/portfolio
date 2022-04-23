@@ -174,15 +174,24 @@ img {
     width: 100%;
   }
 
+
+@media (max-width: 1024px) {
+  .background {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: 1fr;
+  }
+}
+
 .background-left {
     max-width: 725px;
   }
+
 
 p {
     font-size: 2rem;
     line-height: 3.25rem;
     font-weight: 400;
-    margin-bottom: 80px;
   }
 
 .overview h2 {
@@ -216,9 +225,16 @@ p {
   padding: 3rem 0;
 }
 
+
 .section-image {
     margin-bottom: 3rem;
     border-radius: 16px;
+}
+
+@media (max-width: 1024px) {
+  .observations p {
+    margin-bottom: 32px;
+  }
 }
   
 .bottom {
@@ -228,6 +244,16 @@ p {
     margin: 1rem 0 1rem 0;
     width: 100%;
   }
+
+
+@media (max-width: 1024px) {
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin: 1rem 0 0 0;
+  }
+}
 
 .results-two-col {
     display: grid;
@@ -244,6 +270,12 @@ p {
     margin: 1rem 0 1rem 0;
     width: 100%;
   }
+
+@media (max-width: 1024px) {
+  .results-three-col {
+    grid-gap: 4rem;
+  }
+}
   
   .observations h3 {
     font-size: 4rem;
