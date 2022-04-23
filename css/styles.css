@@ -27,19 +27,21 @@ nav {
 footer {
   min-height: 200px;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding-top: 100px;
   padding-bottom: 200px;
 }
 
 footer li {
+  font-size: 18px;
   padding: 0 20px 0px 0px;
   text-decoration: underline;
-  text-underline-offset: 4px;
+  /* text-underline-offset: 4px; */
 }
 
 .menu {
@@ -79,15 +81,13 @@ a:visited {
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 600;
-  margin-bottom: 4rem;
-}
-
-.card h3 {
   font-size: 16px;
   line-height: 22px;
+}
+
+.big-card h3 {
+  font-size: 24px;
+  line-height: 32px;
 }
 
 h4 {
@@ -302,23 +302,6 @@ img {
   padding: 3rem 0;
 }
 
-
-@media (max-width: 767px) {
-  .homepage-grid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-      "one"
-      "four"
-      "five"
-      "two"
-      "three"
-      "six";
-  }
-}
-
 @media (min-width: 768px) {
   .homepage-grid {
     display: grid;
@@ -337,16 +320,15 @@ img {
   height: 500px;
 }
 
-
   .one {
     grid-area: one;
     display: flex;
     flex-direction: column;
   }
 
-  .one img {
-    /* max-height: 200px; */
-  }
+  /* .one img {
+    max-height: 200px;
+  } */
 
   .two {
     grid-area: two;
@@ -374,11 +356,23 @@ img {
     overflow: hidden;
   }
 
+   .big-card one {
+    max-height: 440px;
+    overflow: hidden;
+  }
+
+  .card-image-large {
+    max-height: 700px;
+    overflow: hidden;
+    transition: transform  ease-in-out 900ms;
+  }
+
 @media (max-width: 767px) {
   .card-image-large h3 {
     font-size: 16px;
     line-height: 22px;
     }
+    
   .card-image-large h5 {
     font-size: 14px;
     line-height: 19px;
@@ -386,11 +380,8 @@ img {
     text-transform: uppercase;
     margin-bottom: 4px;
     color: #000000
-
   }
 }
-
-
 
   .hero-image {
     max-height: 440px;
@@ -403,11 +394,11 @@ img {
   }
 
   .intro {
-    font-size: 4rem;
+    font-size: 42px;
     font-weight: 600;
-    line-height: 5rem;
+    line-height: 56px;
     margin: 100px auto 72px auto;
-    width: 60%;
+    width: 80%;
     text-align: center;
   }
   
@@ -434,7 +425,6 @@ img {
     max-width: 725px;
   }
 
-  
   
   .bottom {
     display: grid;
