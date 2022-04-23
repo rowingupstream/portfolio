@@ -17,6 +17,13 @@ body {
   padding: 0 10vw;
 }
 
+@media (max-width: 640px) {
+  .container {
+    padding: 0 4vw;
+  }
+}
+
+
 nav {
   background-color: #ffffff;
   width: 100%;
@@ -174,6 +181,12 @@ img {
     width: 100%;
   }
 
+@media (max-width: 640px) {
+  .background {
+    margin-bottom: 16px;
+  }
+}
+
 
 @media (max-width: 1024px) {
   .background {
@@ -191,6 +204,12 @@ img {
   margin-bottom: 80px;
 }
 
+@media (max-width: 640px) {
+  .content {
+  margin-bottom: 40px;
+  }
+}
+
 p {
     font-size: 16px;
     line-height: 26px;
@@ -200,14 +219,13 @@ p {
 h3 {
   font-size: 32px;
   line-height: 40px;
-  margin-bottom: 24px;
   font-weight: 500;
 }
 
 h4 {
-  font-size: 3rem;
-  line-height: 3.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
 }
 
 .overview h2 {
@@ -216,6 +234,13 @@ h4 {
     margin-bottom: 3rem;
   }
 
+@media (max-width: 640px) {
+  .overview h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
 .overview h3 {
     font-size: 26px;
     line-height: 32px;
@@ -223,11 +248,18 @@ h4 {
     margin-bottom: 3rem;
   }
 
+@media (max-width: 640px) {
+  .overview h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
   .title {
     font-size: 16px;
     line-height: 26px;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 4px;
   }
   
   .description {
@@ -243,8 +275,8 @@ h4 {
 }
 
 @media (max-width: 1024px) {
-  .observations p {
-    margin-bottom: 32px;
+  .learnings {
+    margin-bottom: 16px;
   }
 }
 
@@ -260,13 +292,15 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10rem;
-    margin: 32px 0 0 0;
+    margin: 24px 0 0 0;
     width: 100%;
   }
 
 @media (max-width: 1024px) {
   .results-three-col {
-    grid-gap: 4rem;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin-top: 20px;
   }
 }
 
@@ -274,7 +308,21 @@ h4 {
   .results-three-col {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap:
+    grid-gap: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .results .results-three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .results .results-three-col {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
   }
 }
   
