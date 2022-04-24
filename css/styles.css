@@ -17,6 +17,12 @@ body {
   padding: 0 10vw;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 4vw;
+  }
+}
+
 nav {
   background-color: #ffffff;
   width: 100%;
@@ -302,7 +308,33 @@ img {
   padding: 3rem 0;
 }
 
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 32px;
+  grid-template-areas:
+  "one"
+  "two"
+  "three"
+  "four"
+  "five"
+  "six";
+}
+
 @media (min-width: 768px) {
+    .homepage-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr 1fr);
+      grid-template-areas: 
+      "one two"
+      "three four"
+      "five six";
+  }
+}
+
+
+@media (min-width: 1025px) {
   .homepage-grid {
     display: grid;
     grid-gap: 20px;
@@ -314,6 +346,7 @@ img {
       "two three six";
   }
 }
+
 
 .image-test {
   background-image: url("../images/casestudy-hero.jpg");
