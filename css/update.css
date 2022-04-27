@@ -28,7 +28,7 @@ nav {
   background-color: #ffffff;
   width: 100%;
   position: fixed;
-  margin-top: -100px;
+  /* margin-top: -100px; */
 }
 
 footer {
@@ -71,7 +71,7 @@ img {
 }
 
 /* new code */
-
+/* 
 .header ul {
     overflow: hidden;
 }
@@ -80,11 +80,11 @@ img {
     clear: both;
     max-height: 0;
     transition: all .5s ease-out;
-}
+} */
 
 /* target area for menu */
 
-.header .menu-icon {
+/* .header .menu-icon {
     cursor: pointer;
     display: inline-block;
     float: right;
@@ -95,22 +95,22 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
+} */
 
 /* size of bars */
 
-.header .menu-icon .navicon {
+/* .header .menu-icon .navicon {
     background: #777;
     display: block;
     height: 2px;
     position: relative;
     transition: background .2s ease-out;
     width: 2.3rem;
-}
+} */
 
 /* construction of the bars */
 
-.header .menu-icon .navicon:after,.header .menu-icon .navicon:before {
+/* .header .menu-icon .navicon:after,.header .menu-icon .navicon:before {
     background: #777;
     content: "";
     display: block;
@@ -126,11 +126,11 @@ img {
 
 .header .menu-icon .navicon:after {
     top: -5px;
-}
+} */
 
 /* hides checkbox trigger */
 
-.header .menu-btn {
+/* .header .menu-btn {
     display: none;
 }
 
@@ -138,17 +138,17 @@ img {
     max-height: 100vh;
     padding: 200px 0;
     font-size: 3rem;
-}
+} */
 
 /* hides middle bar */  
 
-.header .menu-btn:checked~.menu-icon .navicon {
+/* .header .menu-btn:checked~.menu-icon .navicon {
     background: transparent;
-}
+} */
 
 /* impacts transition from bars to X */
 
-.header .menu-btn:checked~.menu-icon .navicon:before {
+/* .header .menu-btn:checked~.menu-icon .navicon:before {
     transform: rotate(-45deg);
 }
 
@@ -158,6 +158,156 @@ img {
 
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after,.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before {
     top: 0;
+} */
+
+/* NEW 4-26 */
+
+/* body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+} */
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  display: block;
+  border-right: 1px solid #fff;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+    background-color: #fff;
+
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';  
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 50%;
+}
+
+.header .menu-icon .navicon:after {
+  width: 75%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  background: #ff0000;
+  transform: rotate(-45deg);
+  width: 100%;
+
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  background: #ff0000;
+  transform: rotate(45deg);
+  width: 100%;
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu-icon {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+.hero {
+  padding-top: 70px;
 }
 
 
