@@ -434,9 +434,23 @@ img {
     margin-bottom: 10px;
   }
 
+  @media (max-width: 1024px) {
+  .card-image-large h3 {
+    font-size: 20px;
+    line-height: 28px;
+    }
+  }
+
+
   .card-image-large p {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 26px;
+  }
+
+  @media (max-width: 1024px) {
+    .card-image-large p {
+      display: none;
+    }
   }
 
   .card-image-large h5 {
@@ -446,11 +460,11 @@ img {
   }
 
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .big-card-one h3 {
     font-size: 20px;
     line-height: 28px;
-  }
+  } */
     
   .big-card-one h5 {
     font-size: 12px;
