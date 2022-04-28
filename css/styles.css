@@ -57,6 +57,7 @@ h3 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 767px) {
@@ -270,19 +271,9 @@ h5 {
   }
 }
 
-
 img {
   width: 100%;
 }
-
-
-/* .test {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5rem;
-  margin: 1rem 0 2rem 0;
-  width: 100%;
-} */
 
 .overview {
   padding: 60px 0 20px 0;
@@ -370,7 +361,6 @@ img {
   }
 }
 
-
 @media (min-width: 1025px) {
   .homepage-grid {
     display: grid;
@@ -384,7 +374,6 @@ img {
   }
 }
 
-
 .image-test {
   background-image: url("../images/casestudy-hero.jpg");
   height: 500px;
@@ -395,10 +384,6 @@ img {
     display: flex;
     flex-direction: column;
   }
-
-  /* .one img {
-    max-height: 200px;
-  } */
 
   .two {
     grid-area: two;
@@ -434,7 +419,6 @@ img {
   .card-image-large {
     max-height: 700px;
     overflow: hidden;
-    transition: transform  ease-in-out 900ms;
   }
 
 .card-image-large h3 {
@@ -450,14 +434,13 @@ img {
     }
   }
 
-
   .card-image-large p {
     font-size: 16px;
     line-height: 26px;
   }
 
   @media (max-width: 1024px) {
-    .card-image-large p {
+    .work-text p {
       display: none;
     }
   }
@@ -467,13 +450,6 @@ img {
     line-height: 24px;
     margin-bottom: 10px;
   }
-
-
-/* @media (max-width: 767px) {
-  .big-card-one h3 {
-    font-size: 20px;
-    line-height: 28px;
-  } */
     
   .big-card-one h5 {
     font-size: 12px;
@@ -481,15 +457,14 @@ img {
   }
 }
 
-
   .hero-image {
     max-height: 300px;
     overflow: hidden;
-    transition: transform  ease-in-out 900ms;
+    transition: transform ease-in-out 1s;
   }
   
   .hero-image:hover {
-    transform: scale(1.5,1.5);
+    transform: scale(1.4);
   }
 
   .intro {
@@ -500,7 +475,6 @@ img {
     width: 80%;
     text-align: center;
   }
-
 
   
   @media (max-width: 767px) {
@@ -606,5 +580,20 @@ footer li {
   text-decoration: underline;
   /* text-underline-offset: 4px; */
 }
-  
+
+  .card-image img {
+    transition: 0.6s ease-in-out;
+  }
+
+  .card-image:hover .image-card img{
+    transform: scale(1.4);
+  }
+
+  .card-image-large img {
+    transition: 0.6s ease-in-out;
+  }
+
+  .zoom-effect-container:hover .card-image-large img {
+    transform: scale(1.4);
+  }
 }
