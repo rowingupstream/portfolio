@@ -53,6 +53,14 @@ a:visited {
   padding: 18px 22px;
 }
 
+.big-card-text {
+  padding: 18px 22px;
+}
+
+.big-card-text h3 {
+
+}
+
 h3 {
   font-size: 20px;
   line-height: 28px;
@@ -416,31 +424,32 @@ img {
     overflow: hidden;
   }
 
-  .card-image-large {
+  /* .card-image-large {
+    max-height: 700px;
+    overflow: hidden;
+  } */
+
+
+  .zoom-effect-container {
     max-height: 700px;
     overflow: hidden;
   }
 
-.card-image-large h3 {
+.big-card-text h3 {
     font-size: 32px;
     line-height: 42px;
     margin-bottom: 10px;
   }
 
   @media (max-width: 1024px) {
-  .card-image-large h3 {
+  .big-card-text h3 {
     font-size: 20px;
     line-height: 28px;
     }
   }
-
-  .card-image-large p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-
+  
   @media (max-width: 1024px) {
-    .work-text p {
+    .big-card-text p {
       display: none;
     }
   }
