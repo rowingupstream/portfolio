@@ -218,6 +218,9 @@ h3 {
   }
 }
 
+
+
+
 @media (max-width: 767px) {
   .card-image-large h3 {
     font-size: 20px;
@@ -469,7 +472,7 @@ img {
   .hero-image {
     max-height: 300px;
     overflow: hidden;
-    transition: transform ease-in-out 1s;
+    transition: transform ease-in-out 1.2s;
   }
   
   .hero-image:hover {
