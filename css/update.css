@@ -158,16 +158,16 @@ a:visited {
 }
 
 a:hover {
-  color: #133d98;
-  text-decoration: underline;
+  color: #0554FF;
+  /* text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  transition: text-decoration-color 1s;
+  transition: text-decoration-color 1s; */
 }
 
 footer a:hover {
   text-decoration: none;
-  color: #133d98;
+  color: #0554FF;
 }
 
 /* Home Page Begin */
@@ -220,13 +220,14 @@ footer a:hover {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
       "one one four"
       "one one five"
       "two three six";
   }
 }
+
 
 .big-card one {
   max-height: 480px;
@@ -280,7 +281,6 @@ img {
   transition: 0.6s ease-in-out;
 }
 
-
 .big-card-text {
   padding: 18px 22px;
 }
@@ -311,8 +311,39 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
+  .one {
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .four {
+    grid-area: four;
+  }
+  
+  .five {
+    grid-area: five;
+  }
+
+  .six {
+    grid-area: six;
+  }
+
   .card-image {
     max-height: 440px;
+    overflow: hidden;
+  }
+
+  .big-card one {
+    max-height: 480px;
     overflow: hidden;
   }
 
@@ -571,9 +602,12 @@ img {
   }
 }
 
-.background-left {
+@media (min-width: 1025px) {
+  .background-left {
     max-width: 725px;
   }
+}
+
 
 .content {
   margin-bottom: 80px;
