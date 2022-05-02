@@ -119,10 +119,33 @@ p {
 
 
 .nav-wrap {
-  border-bottom: #000000;
-  border-style: solid;
-  border-bottom-width: 1px;
+  border-bottom: 1px solid #000000;
 }
+
+@media (min-width: 769px) {
+  .nav-wrap {
+    border-bottom: none;
+  }
+}
+
+.border-desktop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+
+@media (max-width: 768px) {
+  .border-desktop {
+    border-bottom: none;
+  }
+}
+
+.container {
+  display: grid;
+  padding: 3vh 10vw;
+}
+
 
 .header {
   display: grid;
@@ -517,7 +540,7 @@ img {
 
 @media (min-width: 769px) {
 .header li a {
-  padding: 16px 16px;
+  padding: 16px 0px 16px 20px;
 }
 .header .menu {
   clear: none;
