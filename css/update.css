@@ -188,6 +188,10 @@ a:hover {
   transition: text-decoration-color 1s; */
 }
 
+a:hover .big-card-text p {
+  color: #000000;
+}
+
 footer a:hover {
   text-decoration: none;
   color: #0554FF;
