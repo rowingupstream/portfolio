@@ -249,9 +249,9 @@ footer a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-      "one one four"
-      "one one five"
-      "two three six";
+      "one one two"
+      "one one three"
+      "four five six";
   }
 }
 
@@ -682,14 +682,14 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
-    margin: 1rem 0 1rem 0;
+    margin: 24px 0 0 0;
     width: 70%;
   }
 
 .results-three-col {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10rem;
+    grid-gap: 48px;
     margin: 24px 0 0 0;
     width: 100%;
   }
@@ -727,7 +727,7 @@ img {
 .observations-two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 80px;
   margin-top: 20px;
 }
 
@@ -745,6 +745,10 @@ img {
 
 .about-content p {
   margin-bottom: 16px;
+}
+
+iframe {
+  margin-bottom: 64px;
 }
   
 }
