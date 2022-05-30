@@ -686,6 +686,17 @@ img {
     width: 70%;
   }
 
+@media (max-width: 1024px) {
+    .results-two-col {
+      grid-template-columns: 1fr;
+      grid-gap: 8px;
+      margin-top: 20px;
+      width: 100%
+    }
+}
+
+
+
 .results-three-col {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
