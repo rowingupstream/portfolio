@@ -119,11 +119,17 @@ p {
 
 .image-title {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
+@media (max-width: 768px) {
+  .image-title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 
 .nav-wrap {
   border-bottom: 1px solid #000000;
@@ -758,7 +764,7 @@ img {
 }
 
 .about-content {
-  max-width: 725px;
+  max-width: 675px;
 }
 
 .about-content p {
@@ -775,7 +781,7 @@ img {
 
 @media (min-width: 1025px) {
   .research p {
-    max-width: 65%;
+    max-width: 60%;
   }
 }
 
@@ -783,11 +789,10 @@ img {
   font-size: 16px;
   line-height: 24px;
   list-style-type: disc;
-  margin: 0 0 4px 32px;
+  margin: 24px 0px;
+  max-width: 60%;
 }
 
 .research li {
-  margin-bottom: 4px;
-}
-  
+  margin-bottom: 8px;
 }
