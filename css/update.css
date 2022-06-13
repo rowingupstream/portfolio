@@ -642,6 +642,14 @@ img {
     width: 100%;
   }
 
+  .about-background {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    margin: 16px 0 40px 0;
+    width: 100%;
+  }
+
 @media (max-width: 640px) {
   .background {
     margin-bottom: 16px;
