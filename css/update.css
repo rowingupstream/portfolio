@@ -34,10 +34,17 @@ h2 {
 
 h3 {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 30px;
   font-weight: 400;
   margin-bottom: 8px;
 }
+
+/* @media (max-width: 640px) {
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+} */
 
 /* h3 {
   font-size: 32px;
@@ -90,6 +97,13 @@ h3 {
 .content h3 {
   font-size: 28px;
   font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .content h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 h4 {
@@ -790,7 +804,12 @@ img {
   line-height: 24px;
   list-style-type: disc;
   margin: 24px 0px;
-  max-width: 60%;
+}
+
+@media (min-width: 1025px) {
+  .research ul {
+    max-width: 60%;
+  }
 }
 
 .research li {
