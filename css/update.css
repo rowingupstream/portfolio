@@ -627,7 +627,7 @@ img {
 /* Overview Section */
 
 .overview {
-    padding: 100px 0 24px 0;
+    padding: 48px 0 24px 0;
   }
 
 .overview-intro {
@@ -648,6 +648,13 @@ img {
     grid-gap: 2rem;
     margin: 16px 0 40px 0;
     width: 100%;
+  }
+
+  @media (max-width: 1025px) {
+    .about-background {
+      grid-template-columns: 1fr;
+      margin-bottom: 0px;
+    }
   }
 
 @media (max-width: 640px) {
