@@ -817,6 +817,7 @@ img {
 .research ul {
   font-size: 16px;
   line-height: 24px;
+  list-style: inside;
   list-style-type: disc;
   margin: 24px 0px;
 }
