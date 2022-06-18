@@ -714,6 +714,29 @@ img {
     border-radius: 16px;
 }
 
+.section-image-no-radius {
+  /* margin-bottom: 80px; */
+  box-shadow: 0 0 24px rgba(0 0 0 / 15%);   
+}
+
+.mockup-mobile-desktop {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px;
+    margin-bottom: 64px;
+}
+
+@media (min-width: 641px) {
+  .mockup-mobile-desktop {
+    display: grid;
+    grid-template-columns: minmax(200px, 25%) 1fr;
+    gap: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+
+
 @media (max-width: 1024px) {
   .learnings {
     margin-bottom: 16px;
