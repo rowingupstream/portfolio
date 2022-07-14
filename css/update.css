@@ -224,6 +224,10 @@ footer a:hover {
   color: #0554FF;
 }
 
+.border-desktop a {
+  margin-left: 0;
+}
+
 /* Home Page Begin */
 .intro {
   font-size: 42px;
