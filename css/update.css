@@ -147,6 +147,8 @@ p {
 
 .nav-wrap {
   border-bottom: 1px solid #000000;
+  position: sticky;
+  top: 0px;
 }
 
 @media (min-width: 769px) {
