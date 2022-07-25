@@ -162,6 +162,7 @@ p {
 @media (min-width: 769px) {
   .nav-wrap {
     border-bottom: none;
+    z-index: 1;
   }
 }
 
@@ -186,7 +187,7 @@ p {
 
 .header {
   display: grid;
-  padding: 2vh 10vw;
+  padding: 2vh 10vw 0vh 10vw;
 }
 
 @media (max-width: 1024px) {
