@@ -719,6 +719,16 @@ img {
   margin-bottom: 80px;
 }
 
+.section-header-section-header {
+  margin-bottom: 48px;
+}
+
+.section-header-section-header h3 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
 @media (max-width: 640px) {
   .content {
   margin-bottom: 40px;
