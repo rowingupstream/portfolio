@@ -288,11 +288,11 @@ footer a:hover {
   grid-gap: 32px;
   grid-template-areas:
   "one"
+  "six"
   "two"
   "three"
   "four"
-  "five"
-  "six";
+  "five";
 }
 
 @media (min-width: 768px) {
@@ -300,9 +300,9 @@ footer a:hover {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: 
-      "one two"
-      "three four"
-      "five six";
+      "one six"
+      "two three"
+      "four five";
   }
 }
 
@@ -313,9 +313,9 @@ footer a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
+      "one one six"
       "one one two"
-      "one one three"
-      "four five six";
+      "three four five";
   }
 }
 
