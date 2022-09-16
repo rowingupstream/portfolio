@@ -330,8 +330,10 @@ footer a:hover {
   overflow: hidden;
 }
 
-.zoom-effect-container:hover .card-image-large img {
-  transform: scale(1.4);
+@media (min-width: 1025px) {  
+  .zoom-effect-container:hover .card-image-large img {
+    transform: scale(1.4);
+  }
 }
 
 @media (max-width: 767px) {
@@ -444,9 +446,11 @@ img {
     transition: transform ease-in-out 1.2s;
   }
   
+@media (min-width: 1025px) {
   .hero-image:hover {
-    transform: scale(1.4);
+      transform: scale(1.4);
   }
+}
   
 
 /* Home Page End */
