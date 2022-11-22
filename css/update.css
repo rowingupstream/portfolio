@@ -241,7 +241,7 @@ a:visited {
 }
 
 a:hover {
-  color: #0554FF;
+  color: #b64316;
   /* text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -663,7 +663,7 @@ footer li {
 
 #coded {
   text-align: center;
-  background-color: #dff3ff;
+  background-color: #F5F3EC;
   border: 1px solid #696969;
   padding: 10px;
   border-radius: 10px;
@@ -811,6 +811,10 @@ img {
   .learnings {
     margin-bottom: 16px;
   }
+}
+
+.learnings h4 {
+  font-weight: 600;
 }
 
 .results-two-col {
