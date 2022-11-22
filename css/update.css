@@ -287,9 +287,9 @@ footer a:hover {
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 32px;
   grid-template-areas:
+  "two"
   "one"
   "six"
-  "two"
   "three"
   "four"
   "five";
@@ -300,8 +300,8 @@ footer a:hover {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: 
-      "one six"
-      "two three"
+      "two one"
+      "six three"
       "four five";
   }
 }
@@ -764,7 +764,6 @@ img {
     line-height: 28px;
     font-weight: 400;
   }
-}
 
   .title {
     font-size: 16px;
@@ -781,7 +780,7 @@ img {
 /* OBSERVATIONS SECTION */
 
 .section-image {
-    margin-bottom: 48px;
+    margin-bottom: 80px;
     border-radius: 16px;
 }
 
@@ -904,7 +903,7 @@ img {
 
 
 .research {
-  width; 100%
+  width: 100%
 }
 
 @media (min-width: 1025px) {
