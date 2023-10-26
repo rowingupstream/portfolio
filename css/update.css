@@ -441,7 +441,7 @@ img {
   }
 
   .hero-image {
-    max-height: 300px;
+    /* max-height: 300px; */
     overflow: hidden;
     transition: transform ease-in-out 1.2s;
   }
